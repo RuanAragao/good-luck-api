@@ -26,7 +26,11 @@ Se o tempo de registro temporário expirar, chamar função de geração de novo
 
 O tempo de reserva temporária deve ser retornado ao usuário.
 
-## 💻Como contribuir
+## 💻 Como contribuir
 
 [Veja como contribuir](./CONTRIBUTING.md).
+
+## ⚖️ Licença
+
+Good Luck API está sob os termos da [licença MIT](./LICENSE).
 
