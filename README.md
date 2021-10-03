@@ -30,6 +30,38 @@ Se o tempo de registro temporário expirar, chamar função de geração de novo
 
 O tempo de reserva temporária deve ser retornado ao usuário.
 
+<!-- GETTING STARTED -->
+## Começando
+
+Este é um exemplo de como você pode configurar este projeto localmente.
+Para obter uma cópia local instalada e funcionando, siga estas etapas simples de exemplo.
+
+### Instalação
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/RuanAragao/good-luck-api.git
+   ```
+2. Install Yarn packages
+   ```sh
+   yarn install
+   ```
+3. Start the dev server
+   ```sh
+   yarn dev
+   ```
+   
+### Construir
+
+1. Making a production build
+   ```sh
+   yarn build
+   ```
+2. Run a production server
+   ```sh
+   yarn start
+   ```
+
 ## 💻 Como contribuir
 
 [Veja como contribuir](./CONTRIBUTING.md).
