@@ -1,33 +1,32 @@
-# NextJS Typescript Boilerplate
+# Good Luck API
 
-Bootstrap a developer-friendly NextJS app configured with:
+API para geração e registro de tickets de aposta sem registro de dados pessoais
 
-- [Typescript](https://www.typescriptlang.org/)
-- Linting with [ESLint](https://eslint.org/)
-- Formatting with [Prettier](https://prettier.io/)
-- Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
-- Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
+## 📋 Como será
 
-## Preview
+A API irá ser desenvolvida usando NextJS e MongoDB
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Projeto base:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest)
+> Bootstrap a developer-friendly NextJS app configured with:
+>
+> - [Typescript](https://www.typescriptlang.org/)
+> - Linting with [ESLint](https://eslint.org/)
+> - Formatting with [Prettier](https://prettier.io/)
+> - Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
+> - Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
 
-## Deploy your own
+O gerador deverá gerar um número randômico e checar se já existe o número registrado ou está em reserva temporária, se não houver, fazer uma reserva temporária (determinados segundos) e retornar para o usuário.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Se o número é escolhido, realizar registro do mesmo atrelado a uma chave única secreta que será usada para validar a propriedade do ticket.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest&project-name=with-typescript-eslint-jest&repository-name=with-typescript-eslint-jest)
+Se é solicitado a geração de um novo número, excluir registro temporário e chamar função de geração de novo número.
 
-## How to use
+Se o tempo de registro temporário expirar, chamar função de geração de novo número. 
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+O tempo de reserva temporária deve ser retornado ao usuário.
 
-```bash
-npx create-next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
-# or
-yarn create next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
-```
+## 💻Como contribuir
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+[Veja como contribuir](./CONTRIBUTING.md).
+
