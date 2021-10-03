@@ -31,7 +31,7 @@ If temporary registration time expires, call new number generation function.
 Temporary booking time must be returned to the user.
 
 <!-- GETTING STARTED -->
-## Getting Started
+## :pushpin: Getting Started
 
 This is an example of how you can set up this project locally.
 To get a local copy up and running follow these simple example steps.
@@ -48,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
    yarn install
    ```
 3. Start the dev server
-  ```sh
+   ```sh
    yarn dev
    ```
    
