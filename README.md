@@ -1,12 +1,16 @@
 # Good Luck API
 
-API para geração e registro de tickets de aposta sem registro de dados pessoais
+*Ler em outras linguagens: [English](./README-en.md), Português(Brasil)*
+
+API para geração e registro de tickets de aposta sem registro de dados pessoais.
 
 ## 📋 Como será
 
 A API irá ser desenvolvida usando NextJS e MongoDB
 
 Projeto base:
+
+[NextJS Typescript Boilerplate](https://github.com/vercel/next.js/tree/master/examples/with-typescript-eslint-jest)
 
 > Bootstrap a developer-friendly NextJS app configured with:
 >
