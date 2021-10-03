@@ -31,7 +31,7 @@ Se o tempo de registro temporário expirar, chamar função de geração de novo
 O tempo de reserva temporária deve ser retornado ao usuário.
 
 <!-- GETTING STARTED -->
-## Começando
+## :pushpin: Começando
 
 Este é um exemplo de como você pode configurar este projeto localmente.
 Para obter uma cópia local instalada e funcionando, siga estas etapas simples de exemplo.
