@@ -1,7 +1,29 @@
+import { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { prisma } from '../lib/prisma'
 
-export const Home = (): JSX.Element => (
+export const getServerSideProps: GetServerSideProps = async () => {
+  await prisma.$connect()
+
+  // write your database query here!
+
+  let dbConnected = false
+  if (prisma != undefined) {
+    dbConnected = true
+  }
+  return {
+    props: {
+      dbConnected,
+    },
+  }
+}
+
+interface Props {
+  dbConnected: boolean
+}
+
+export const Home: React.FC<Props> = ({ dbConnected }): JSX.Element => (
   <div className="container">
     <Head>
       <title>Create Next App</title>
@@ -16,6 +38,10 @@ export const Home = (): JSX.Element => (
       <p className="description">
         Get started by editing <code>pages/index.tsx</code>
       </p>
+
+      <strong>
+        {dbConnected ? 'Database Connected!' : 'Database not connected'}
+      </strong>
 
       <button
         onClick={() => {
