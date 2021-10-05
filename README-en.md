@@ -30,6 +30,39 @@ If temporary registration time expires, call new number generation function.
 
 Temporary booking time must be returned to the user.
 
+<!-- GETTING STARTED -->
+## :pushpin: Getting Started
+
+This is an example of how you can set up this project locally.
+To get a local copy up and running follow these simple example steps.
+
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/RuanAragao/good-luck-api.git
+   ```
+2. Install Yarn packages
+   ```sh
+   yarn install
+   ```
+3. Start the dev server
+   ```sh
+   yarn dev
+   ```
+   
+### Build
+
+1. Making a production build
+   ```sh
+   yarn build
+   ```
+2. Start the production server
+   ```sh
+   yarn start
+   ```
+
 ## 💻 How to contribute
 
 [Look how to contribute](./CONTRIBUTING.md).
