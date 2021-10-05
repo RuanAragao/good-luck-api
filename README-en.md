@@ -1,6 +1,6 @@
 # Good Luck API
 
-*Read in other languages: English, [Português(Brasil)](./README.md)*
+_Read in other languages: English, [Português(Brasil)](./README.md)_
 
 API for generating and registering betting tickets without registering personal data.
 
@@ -31,11 +31,11 @@ If temporary registration time expires, call new number generation function.
 Temporary booking time must be returned to the user.
 
 <!-- GETTING STARTED -->
+
 ## :pushpin: Getting Started
 
 This is an example of how you can set up this project locally.
 To get a local copy up and running follow these simple example steps.
-
 
 ### Installation
 
@@ -51,7 +51,7 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    yarn dev
    ```
-   
+
 ### Build
 
 1. Making a production build
@@ -70,4 +70,3 @@ To get a local copy up and running follow these simple example steps.
 ## ⚖️ License
 
 Good Luck is released under the terms of the [licença MIT](./LICENSE).
-
