@@ -7,6 +7,7 @@ interface Data {
 }
 
 const number = (_req: NextApiRequest, res: NextApiResponse<Data>) => {
+  const number:Number  = randomNumber()
   if (_req.method === 'POST') {
     const number :String =  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() 
     res.status(200).json({ number: number })
