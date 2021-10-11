@@ -1,6 +1,6 @@
 # Good Luck API
 
-*Ler em outras linguagens: [English](./README-en.md), Português(Brasil)*
+_Ler em outras linguagens: [English](./README-en.md), Português(Brasil)_
 
 API para geração e registro de tickets de aposta sem registro de dados pessoais.
 
@@ -26,11 +26,12 @@ Se o número é escolhido, realizar registro do mesmo atrelado a uma chave únic
 
 Se é solicitado a geração de um novo número, excluir registro temporário e chamar função de geração de novo número.
 
-Se o tempo de registro temporário expirar, chamar função de geração de novo número. 
+Se o tempo de registro temporário expirar, chamar função de geração de novo número.
 
 O tempo de reserva temporária deve ser retornado ao usuário.
 
 <!-- GETTING STARTED -->
+
 ## :pushpin: Começando
 
 Este é um exemplo de como você pode configurar este projeto localmente.
@@ -50,7 +51,7 @@ Para obter uma cópia local instalada e funcionando, siga estas etapas simples d
    ```sh
    yarn dev
    ```
-   
+
 ### Construir
 
 1. Making a production build
@@ -69,4 +70,3 @@ Para obter uma cópia local instalada e funcionando, siga estas etapas simples d
 ## ⚖️ Licença
 
 Good Luck API está sob os termos da [licença MIT](./LICENSE).
-
