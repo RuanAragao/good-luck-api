@@ -6,9 +6,9 @@ interface Data {
   message?: string;
 }
 
-const number = (_req: NextApiRequest, res: NextApiResponse<Data>) => {
+const number = (_req: NextApiRequest, res: NextApiResponse<Data>): boolean => {
   if (_req.method === 'POST') {
-    const number :String =  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() +  randomNumber(10).toString() 
+    const number: string = randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString()
     res.status(200).json({ number: number })
     return true
   }
