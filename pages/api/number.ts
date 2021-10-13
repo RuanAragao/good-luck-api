@@ -23,7 +23,7 @@ const number = async (_req: NextApiRequest, res: NextApiResponse<Data>) => {
   await cors(_req, res)
 
   if (_req.method === 'POST') {
-    const number: string = randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString() + randomNumber(10).toString()
+    const number: string = randomNumber(8).toString()
     res.status(200).json({ number: number })
     return true
   }
